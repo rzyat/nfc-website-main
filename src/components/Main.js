@@ -8,6 +8,12 @@ import logo from "../Assets/SmartCard_Light.png"
 
 
 const Main = () => {
+
+    const [showMenu, setShowMenu] = useState(false);
+
+    const toggleMenu = () => {
+      setShowMenu(!showMenu);
+    };
     
     const [text, setText] = useState('Smart.');
     useEffect(() => {
@@ -27,9 +33,14 @@ const Main = () => {
     <div className='container-website'>
         <div className='content-website'>
             <div className='first-div' id='first-div'>
-                <div className='nav-menu'>
+                <div>
                     <nav>
-                        <ul>
+                        <div className="menu-icon" onClick={toggleMenu}>
+                            <div className={`bar ${showMenu ? 'active' : ''}`} />
+                            <div className={`bar ${showMenu ? 'active' : ''}`} />
+                            <div className={`bar ${showMenu ? 'active' : ''}`} />
+                        </div>
+                        <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
                             <span className='logo-container'> <img src={logo} width={150} className='logo-content' alt='logo' /> </span>
                             <li>
                                 <Link to="first-div" smooth={true} duration={600}>Accueil</Link>
