@@ -84,8 +84,6 @@ li:hover{
     font-weight: bold;
 }
 
-.animated-text {
-}
 
 .text-changer{
     color: #9A73B5;
@@ -279,6 +277,27 @@ li:hover{
     letter-spacing: 1px;
     font-family: 'Oswald', sans-serif;
     font-weight: 500;
+}
+
+
+.columns-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+    margin-top: 50px;
+}
+
+.column-1{
+    padding: 10px;
+    border: 1px solid #ccc;
+    width: 500px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+.column-1 h3{
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
 }
 
 

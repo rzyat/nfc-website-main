@@ -2,9 +2,12 @@ import React from 'react'
 import "./Main.css"
 import { Link } from 'react-scroll';
 import { useState, useEffect } from 'react';
-import { FaFacebook, FaInstagram, FaLinkedin } from "react-icons/fa"
+import { FaFacebook, FaInstagram, FaLinkedin, FaShare, FaQrcode, FaGlobe,  } from "react-icons/fa"
 import nfcImage from "../Assets/nfc_detector.jpg"
 import logo from "../Assets/SmartCard_Light.png"
+import { AiFillFileText } from 'react-icons/ai';
+import { FiAnchor, FiPhoneCall } from 'react-icons/fi';
+
 
 
 const Main = () => {
@@ -110,6 +113,32 @@ const Main = () => {
                         Grâce à la simplicité du tap NFC, vos contacts pourront accéder instantanément à votre profil 
                         professionnel et obtenir toutes les informations nécessaires. 
                     </p>
+                </div>
+                <div className='columns-container'>
+                    <div className='column-1'>
+                        <FaShare size={50}/>
+                        <h3> Partagez votre carte digitale </h3>
+                    </div>
+                    <div className='column-1'>
+                        <FaQrcode size={50}/>
+                        <h3> Scan QR code </h3>
+                    </div>
+                    <div className='column-1'>
+                        <FaGlobe size={50}/>
+                        <h3> Social media links </h3>
+                    </div>
+                    <div className='column-1'>
+                        <AiFillFileText size={50}/>
+                        <h3> Diverses modèles de Template </h3>
+                    </div>
+                    <div className='column-1'>
+                        <FiAnchor size={50}/>
+                        <h3> Lead generation </h3>
+                    </div>
+                    <div className='column-1'>
+                        <FiPhoneCall size={50}/>
+                        <h3> Click on call </h3>
+                    </div>
                 </div>
             </div>
             <div className='third-div' id='third-div'>
