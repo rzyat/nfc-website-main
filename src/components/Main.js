@@ -71,6 +71,13 @@ const Main = () => {
                             <div className={`bar ${showMenu ? 'active' : ''}`} />
                             <div className={`bar ${showMenu ? 'active' : ''}`} />
                         </div>
+
+                        <div id='second-nav-menu' className={`nav-menu ${showMenu ? 'active' : ''}`}>
+                            <li> jhjhj </li>
+                            <li> frfrfrfr </li>
+                            <li> reda zyat </li>
+                        </div>
+
                         <ul className={`nav-menu ${showMenu ? 'active' : ''}`}>
                             <span className='logo-container'> <img src={logo} width={150} className='logo-content' alt='logo' /> </span>
                             <li>
@@ -96,9 +103,9 @@ const Main = () => {
                 </div>
                 <div className='content-of-first'>
                     <div className='icons-container'>
-                        <FaInstagram className='icon' size={30}/> <br/>
-                        <FaFacebook className='icon' size={30}/> <br/>
-                        <FaLinkedin className='icon' size={30}/>
+                        <FaInstagram className='icon-ff' size={30}/> <br/>
+                        <FaFacebook className='icon-ff' size={30}/> <br/>
+                        <FaLinkedin className='icon-ff' size={30}/>
                     </div>
                     <div className='text-container'>
                             <div className='text-image-flex'>
@@ -208,14 +215,26 @@ const Main = () => {
                 <div className='templates-container'>
                     <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
+                    </div>
+                    <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
-                        <img src={nfcImage} width={300} />
+                    </div>   
+                    <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
                     </div>
-                    <div className='templates-second-line'>
+                    <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
+                    </div>
+                    <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
+                    </div>
+                    <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
+                    </div>                     
+                    <div className='templates-first-line'>
+                        <img src={nfcImage} width={300} />
+                    </div>            
+                    <div className='templates-first-line'>
                         <img src={nfcImage} width={300} />
                     </div>
                 </div>
@@ -298,25 +317,28 @@ const Main = () => {
                 <div className='flex-contact'>
                     <div className='contactField-section'>
                         <h1 className='contact-h1'> Nous contacter </h1>
-                        <div class="contact-form">
+                        <div className="contact-form">
                             <form>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <input type="text" id="full-name" name="full-name" placeholder='Nom complet*' />
                                 </div>
                                 <div className='flex-contact-fields'>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <input type="tel" id="phone" name="phone" placeholder='Tel*' />
                                     </div>
-                                    <div class="form-group">
+                                    <div className="form-group">
                                         <input type="email" id="email" name="email" placeholder='Email*' />
                                     </div>
                                 </div>
-                                <div class="form-group">
+                                <div className="form-group">
                                     <textarea className='text-area-measseage' id="message" name="message" placeholder='Message*' ></textarea>
                                 </div>
                                 <button className='contact-button' type="submit"> Envoyer </button>
                             </form>
                         </div>
+                    </div>
+                    <div>
+                        
                     </div>
                     <div className='infos-contact'>
                         <h1 className='contact-h1'> Notre emplacement </h1>

@@ -1,4 +1,3 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;500;600;700;800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;1,100;1,300;1,400&display=swap');
@@ -19,11 +18,11 @@ ul{
     justify-content: center;
     align-items: center;
     background-color: #E9E4ED;
-    height: 12vh;
-   
+    height: 12vh; 
     top: 0;
     box-shadow: 0px 7px 31px 0px rgba(0,0,0,0.67);
 }
+
 
 li{
     margin-left: 50px;
@@ -48,24 +47,20 @@ li:hover{
     height: 100vh;
 }
 
-.first-div{
-    background-color: aliceblue;
-    height: 100vh;
-}
 
 .second-div{
     background-color: rgb(255, 255, 255);
-    height: 115vh;
+    height: 120%;
 }
 
 .third-div{
     background-color: aliceblue;
-    height: 120vh;
+    height: 120%;
 }
 
 .fourth-div{
     background-color: rgb(255, 255, 255);
-    height: 175vh;
+    height: 120%;
 }
 
 .fifth-div{
@@ -73,10 +68,6 @@ li:hover{
     height: 100vh;
 }
 
-.sixth-div{
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-}
 
 .text-container{
     font-size: 60px;
@@ -84,6 +75,18 @@ li:hover{
     margin-top: 100px;
     font-weight: bold;
 }
+
+.icon-ff{
+    margin-bottom: 10px;
+    color: #61398F;
+    transition: 0.3s;
+}
+
+.icon-ff:hover{
+    cursor: pointer;
+    scale: 1.3;
+}
+
 
 
 .text-changer{
@@ -93,7 +96,9 @@ li:hover{
 
 .content-of-first{
     display: flex;
-    margin-top: 60px;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3%;
 }
 
 
@@ -127,31 +132,61 @@ li:hover{
         height: 100%;
         display: block;
     }
+
+    .first-div{
+        height: 100%;
+    }
+
+    .text-image-flex{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .templates-container{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .templates-first-line{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .templates-second-line{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .icons-container{
+        display: none;
+    }
+
+    .sous-card{
+        text-align: center;
+        width: 80%;
+        margin-bottom: 30px;
+    }
+
+    .animated-text{
+        text-align: center;
+        width: 80%;
+    }
+
+
+    .image-container{
+        display: none;
+    }
+
+    .plans-fourth-div{
+        display: block;
+    }
+    
+    .plan {
+        margin-left: auto;
+        margin-right: auto;
+    }
+
   }
-
-
-/* @keyframes changeText {
-    0% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    25% {
-      opacity: 0;
-      transform: translateY(-20px);
-    }
-    50% {
-      opacity: 0;
-      transform: translateY(20px);
-    }
-    75% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-    100% {
-      opacity: 1;
-      transform: translateY(0);
-    }
-  } */
 
 
 .inscription-section{
@@ -204,7 +239,7 @@ li:hover{
 
 .image-container{
     margin-left: 150px;
-    margin-right: 100px;
+    margin-right: 20px;
     transition: 0.3s;
 }
 
@@ -218,7 +253,7 @@ li:hover{
 
 .text-image-flex{
     display: flex;
-    margin-top: 20px;
+    align-items: center;
 }
 
 .start-button{
@@ -260,7 +295,6 @@ li:hover{
 }
 
 .second-div-paragraph{
-
     color: #8B5FBF;
     font-size: 20px;
     margin-bottom: 20px;
@@ -290,10 +324,15 @@ li:hover{
 
 .column-1{
     padding: 10px;
-    width: 400px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     transition: 0.3s;
+    margin-bottom: 40px;
+}
+
+.nav-ls{
+    display: none;
 }
 
 .column-1 p{
@@ -303,7 +342,7 @@ li:hover{
 
 .column-1:hover{
     cursor: pointer;
-    box-shadow: 0px 7px 30px 0px #8B5FBF;
+    box-shadow: 0px 4px 15px 0px #8B5FBF;
     border-radius: 20px;
 }
 
@@ -328,6 +367,50 @@ li:hover{
     font-family: 'Montserrat', sans-serif;
     letter-spacing: 2px;
 }
+
+#second-nav-menu{
+    display: none;
+}
+
+
+@media (max-width: 767px) {
+    .columns-container {
+      grid-template-columns: 1fr;
+      grid-gap: 20px;
+    }
+  
+    .column-1 {
+      width: 80%;
+    }
+
+    .templates-container{
+        grid-template-columns: 1fr;
+        grid-gap: 20px;
+    }
+
+    .templates-first-line{
+        grid-template-columns: 1fr;
+    }
+
+    #second-nav-menu.active{
+        display: block;
+    }
+    
+
+    /* .nav-ls{
+        display: block;
+    }
+
+    .nav-menu.active {
+      display: flex;
+    } */
+    
+}
+
+
+
+
+
 
 .arrow-to-top{
     position: fixed;
@@ -373,30 +456,24 @@ li:hover{
 }
 
 .templates-container{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    margin-top: 50px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 20px;
+    padding-bottom: 50px;
 }
 
 .templates-first-line{
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    display: grid;
-    padding: 10px;
-    margin: 0 auto;
-    transition: 0.3s;
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
 }
 
-.templates-second-line{
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 50px;
-    display: grid;
-    padding: 10px;
-    margin: 0 auto;
-    transition: 0.3s;
+.templates-first-line img{
+    width: 100%;
+    max-width: 300px;
+    border-radius: 20px;
 }
+
 
 .fourth-div-content{
     padding-top: 60px;
@@ -427,18 +504,17 @@ li:hover{
 }
 
 .plans-fourth-div{
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-gap: 10px;
-    margin-top: 100px;
+    display: flex;
+   
 }
 
 .plan{
     padding: 10px;
-    width: 500px;
+    width: 80%;
     margin: 0 auto;
     text-align: center;
     transition: 0.3s;
+    margin-bottom: 50px;
 }
 
 .plan h1, h2, p{
@@ -545,42 +621,3 @@ li:hover{
     text-decoration: none;
     color: #391f5a;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* @media (max-width: 768px) {
-    .text-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-    }
-}
-   */
-
-/* @media (min-width: 1200px) {
-    .text-container{
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
-    }
-} */
